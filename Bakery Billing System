@@ -1,0 +1,312 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+int choice,price=0; 
+char info[1000];
+void checkout()
+{
+	printf("--------------------------------------------------------------------------------\n\t\tYou Bill\n--------------------------------------------------------------------------------\n");
+
+	printf("%s\n",info);
+	printf("--------------------------------------------------------------------------------\n\t\tTotal:Rs.%d\n--------------------------------------------------------------------------------\n",price);
+
+	printf("Thanks for purchasing. Keep visiting\n");
+	 
+}
+int main()
+{
+	
+	printf("--------------------------------------------------------------------------------\n\t\tWelcome to Virindavan Bakery Shop\n--------------------------------------------------------------------------------\n");
+	printf("\t\t1.Biscuit\n\t\t2.Cake\n\t\t3.Pastry\n\t\t4.Pudding\n\t\t5.Cookies\n\t\t6.Bread\n");
+	printf("--------------------------------------------------------------------------------\n\t\t\tEnter Your Choice\n--------------------------------------------------------------------------------\n");
+	scanf("%d",&choice);
+ x1:	switch(choice)
+	{
+	int range;
+		case 1:
+		printf("--------------------------------------------------------------------------------\n\t\tBiscuit Range\n--------------------------------------------------------------------------------\n");
+		
+			printf("1.RS.5\n2.RS.10\n3.RS.15\n4.RS.20\n5.RS.50\n");
+			printf("Enter your Range:\n");
+			scanf("%d",&range);
+			if(range==1)
+			{
+				price+=5;//a[i]=
+				strcat(info,"Rs.5 Biscuit\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+		        int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+			} 
+			else if(range==2)
+			{
+				price+=10;
+				strcat(info,"Rs.10 Biscuit\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+				int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+			} 
+			else if(range==3)
+			{
+				price+=15;strcat(info,"Rs.15 Biscuit\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+				int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+			} 
+			else if(range==4) 
+			{
+				price+=20;strcat(info,"Rs.20 Biscuit\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+				int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+			}
+			else if(range==5)
+			{
+				price+=50;strcat(info,"Rs.50 Biscuit\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+				int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+		
+			} 
+			else
+			{
+				printf("Please Enter valid choice!\n");goto x1;
+			}
+			break;
+		case 2:	
+		printf("--------------------------------------------------------------------------------\n\t\Cake Range\n--------------------------------------------------------------------------------\n");
+		
+			printf("1.RS.500\n2.RS.1000\n3.RS.1500\n4.RS.2000\n5.RS.5000\n");
+			printf("Enter your Range:\n");
+			scanf("%d",&range);
+			if(range==1)
+			{
+				price+=500;//a[i]=
+				strcat(info,"Rs.500 Cake\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+		        int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+			} 
+			else if(range==2)
+			{
+				price+=1000;
+				strcat(info,"Rs.1000 Cake\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+				int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+			} 
+			else if(range==3)
+			{
+				price+=1500;strcat(info,"Rs.1500 Cake\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+				int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+			} 
+			else if(range==4) 
+			{
+				price+=2000;strcat(info,"Rs.2000 Biscuit\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+				int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+			}
+			else if(range==5)
+			{
+				price+=5000;strcat(info,"Rs.5000 Cake\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+				int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+		
+			} 
+			else
+			{
+				printf("Please Enter valid choice!\n");goto x1;
+			}
+			break;
+		case 3:	
+		printf("--------------------------------------------------------------------------------\n\t\tPastry Range\n--------------------------------------------------------------------------------\n");
+		
+			printf("1.RS.5\n2.RS.10\n3.RS.15\n4.RS.20\n5.RS.50\n");
+			printf("Enter your Range:\n");
+			scanf("%d",&range);
+			if(range==1)
+			{
+				price+=5;//a[i]=
+				strcat(info,"Rs.5 Pastry\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+		        int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+			} 
+			else if(range==2)
+			{
+				price+=10;
+				strcat(info,"Rs.10 Pastry\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+				int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+			} 
+			else if(range==3)
+			{
+				price+=15;strcat(info,"Rs.15 Pastry\n");
+			
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+				int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+			} 
+			else if(range==4) 
+			{
+				price+=20;strcat(info,"Rs.20 Pastry\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+				int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+			}
+			else if(range==5)
+			{
+				price+=50;strcat(info,"Rs.50 Pastry\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+				int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+		
+			} 
+			else
+			{
+				printf("Please Enter valid choice!\n");goto x1;
+			}
+			break;
+		case 4:	
+			printf("--------------------------------------------------------------------------------\n\t\tPudding Range\n--------------------------------------------------------------------------------\n");
+		
+			printf("1.RS.25\n2.RS.30\n3.RS.35\n");
+			printf("Enter your Range:\n");
+			scanf("%d",&range);
+			if(range==1)
+			{
+				price+=25;//a[i]=
+				strcat(info,"Rs.25 Pudding\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+		        int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+			} 
+			else if(range==2)
+			{
+				price+=30;
+				strcat(info,"Rs.30 Pudding\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+				int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+			} 
+			else if(range==3)
+			{
+				price+=35;strcat(info,"Rs.35 Pudding\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+				int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+			} 
+		
+			else{
+				printf("Please Enter valid choice!\n");goto x1;
+			}
+			break;
+		case 5:	
+			printf("--------------------------------------------------------------------------------\n\t\tCookies Range\n--------------------------------------------------------------------------------\n");
+		
+			printf("1.RS.5\n2.RS.10\n3.RS.15\n4.RS.20\n5.RS.50\n");
+			printf("Enter your Range:\n");
+			scanf("%d",&range);
+			if(range==1)
+			{
+				price+=5;//a[i]=
+				strcat(info,"Rs.5 Cookies\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+		        int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+			} 
+			else if(range==2)
+			{
+				price+=10;
+				strcat(info,"Rs.10 Cookies\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+				int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+			} 
+			else if(range==3)
+			{
+				price+=15;strcat(info,"Rs.15 Cookies\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+				int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+			} 
+			else if(range==4) 
+			{
+				price+=20;strcat(info,"Rs.20 Cookies\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+				int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+			}
+			else if(range==5)
+			{
+				price+=50;strcat(info,"Rs.50 Cookies\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+				int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+		
+			} 
+			else
+			{
+				printf("Please Enter valid choice!\n");goto x1;
+			}
+			break;
+		
+		case 6:	
+			printf("--------------------------------------------------------------------------------\n\t\tBread Range\n--------------------------------------------------------------------------------\n");
+		
+			printf("1.RS.5\n2.RS.10\n3.RS.15\n4.RS.20\n5.RS.50\n");
+			printf("Enter your Range:\n");
+			scanf("%d",&range);
+			if(range==1)
+			{
+				price+=5;//a[i]=
+				strcat(info,"Rs.5 Bread\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+		        int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+			} 
+			else if(range==2)
+			{
+				price+=10;
+				strcat(info,"Rs.10 Bread\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+				int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+			} 
+			else if(range==3)
+			{
+				price+=15;strcat(info,"Rs.15 Bread\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+				int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+			} 
+			else if(range==4) 
+			{
+				price+=20;strcat(info,"Rs.20 Bread\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+				int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+			}
+			else if(range==5)
+			{
+				price+=50;strcat(info,"Rs.50 Bread\n");
+				printf("\t\tDo you want to purchase more?:\n\t\t1.Yes\n\t\tAny other key for No");
+				int more;
+		        scanf("%d",&more); if(more==1) main(); else checkout();
+		
+			} 
+			else
+			{
+				printf("Please Enter valid choice!\n");goto x1;
+			}
+			break;
+			default:
+				printf("Please Enter valid choice!\n");main();
+	
+
+	}
+}
